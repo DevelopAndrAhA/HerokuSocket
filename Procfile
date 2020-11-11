@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* pkg.aloha.Main
+web: java -jar target/TestJarOnHeroku.jar
