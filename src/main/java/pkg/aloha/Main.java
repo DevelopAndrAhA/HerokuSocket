@@ -1,4 +1,4 @@
-package pkg;
+package pkg.aloha;
 
 import java.io.*;
 import java.net.InetAddress;

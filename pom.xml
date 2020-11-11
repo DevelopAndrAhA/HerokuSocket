@@ -7,7 +7,6 @@
     <groupId>TestJarOnHeroku</groupId>
     <artifactId>HerokuSocket</artifactId>
     <version>1.0</version>
-
     <properties>
         <full-artifact-name>target/${project.artifactId}-${project.version}.jar</full-artifact-name>
     </properties>
@@ -22,7 +21,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>pkg.Main</mainClass>
+                            <mainClass>pkg.aloha.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
