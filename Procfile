@@ -1,1 +1,1 @@
-web: java -cp target/classes/ com.yourpackage.MainClassName
+web: java -cp target/classes/:target/dependency/* com.yourpackage.MainClassName
