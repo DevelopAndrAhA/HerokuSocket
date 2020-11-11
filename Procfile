@@ -1,1 +1,1 @@
-worker: sh target/pkg/Main
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* pkg.Main
