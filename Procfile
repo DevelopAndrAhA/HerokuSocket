@@ -1,1 +1,1 @@
-web: java -jar target/TestJarOnHeroku.jar
+worker: java -jar target/TestJarOnHeroku.jar
