@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: 99670
-Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_211
-Main-Class: pkg.aloha.Main
-

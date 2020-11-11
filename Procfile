@@ -1,1 +1,1 @@
-worker: java -jar target/TestJarOnHeroku.jar
+web: java -cp target/classes/:target/classes/* pkg.aloha.Main
