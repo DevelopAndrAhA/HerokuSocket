@@ -1,9 +1,8 @@
 package pkg;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -12,6 +11,7 @@ import java.net.Socket;
  */
 public class Main {
     public static void main(String[] args) {
+        System.out.println("aloha salam app run");
         try {
             ServerSocket serverSocket = new ServerSocket(80);
             Socket socket = serverSocket.accept();
@@ -19,9 +19,14 @@ public class Main {
             System.out.println(inetAddress.toString()+" это адрес клиента");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             System.out.println( bufferedReader.readLine());
+           /* Socket socket = new Socket();
+            socket.connect(new InetSocketAddress("www.socketkg.herokuapp.com",80));
 
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            bufferedWriter.write("aloha salam s clienta");*/
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
+//www.socketkg.herokuapp.com 8080
