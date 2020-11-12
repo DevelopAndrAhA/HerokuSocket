@@ -16,20 +16,21 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("aloha salam app run");
         try {
-           /* ServerSocket serverSocket = new ServerSocket(80);
+            ServerSocket serverSocket = new ServerSocket(80);
             Socket socket = serverSocket.accept();
             InetAddress inetAddress =  socket.getInetAddress();
             System.out.println(inetAddress.toString()+" это адрес клиента");
-            *//*BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            System.out.println( bufferedReader.readLine());*//*
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            System.out.println( bufferedReader.readLine());
+            bufferedReader.close();
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             bufferedWriter.write("aloha salam s clienta");
-            bufferedWriter.close();*/
-            Socket socket = new Socket();
+            bufferedWriter.close();
+         /*   Socket socket = new Socket();
             socket.connect(new InetSocketAddress("socketkg.herokuapp.com",80));
 
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-            bufferedWriter.write("aloha salam s clienta");
+            bufferedWriter.write("aloha salam s clienta");*/
         } catch (IOException e) {
             e.printStackTrace();
         }
