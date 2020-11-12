@@ -1,5 +1,3 @@
-package pkg.aloha;
-
 import java.io.*;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -26,7 +24,7 @@ public class Main {
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             bufferedWriter.write("aloha salam s clienta");
             bufferedWriter.close();
-            /*Socket socket = new Socket();
+           /* Socket socket = new Socket();
             socket.connect(new InetSocketAddress("socketkg.herokuapp.com",80));
 
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
